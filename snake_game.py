@@ -137,6 +137,6 @@ def gameLoop():  # главная функция, в которой происх
         clock.tick(snake_speed) # чтобы придать плавности нашей игре задаем скорость смены кадров
 
     pygame.quit()    
-    quit()
+    raise Exception('Exit')
 
 gameLoop()
